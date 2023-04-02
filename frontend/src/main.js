@@ -9,7 +9,7 @@ import io from 'socket.io-client';
 
 const socket = io('http://localhost:8001');
 
-Vue.prototype.$socket = socket;
+Vue.prototype.$socket = socket
 
 Vue.use(VueMaterial)
 Vue.use(Directives)
