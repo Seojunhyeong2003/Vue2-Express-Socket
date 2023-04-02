@@ -26,10 +26,10 @@ app.get('/', function (req, res) {
 });
 //connection event handler
 io.on('connection', function (socket) {
-    console.log('Connect from Client: ' + socket)
+    console.log('Connect from Client: ' + socket);
 
     socket.on('chat', function (data) {
-        console.log('message from Client: ' + data.message)
+        console.log('message from Client: ' + data.message);
 
         var rtnMessage = {
             message: data.message
