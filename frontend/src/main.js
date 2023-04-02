@@ -14,7 +14,7 @@ Vue.prototype.$socket = socket;
 Vue.use(VueMaterial)
 Vue.use(Directives)
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 new Vue({
   render: h => h(App),
