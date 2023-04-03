@@ -12,7 +12,7 @@
                     <md-textarea v-model="textarea" disabled v-auto-scroll-bottom></md-textarea>
                 </md-field>
                 <md-field>
-                    <label>여기에 메시지를 입력하세요</label>
+                    <label>여기에 메시지를 입력하세요.</label>
                     <md-input v-model="message"></md-input>
                     <md-button class="md-primary md-raised" @click="sendMessage()">전송</md-button>
                 </md-field>
