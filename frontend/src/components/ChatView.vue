@@ -3,18 +3,18 @@
         <md-app>
             <md-app-toolbar class="md-primary">
                 <div class="md-toolbar-row">
-                    <span class="md-title">My Chat App</span>
+                    <span class="md-title">채팅 예제</span>
                 </div>
             </md-app-toolbar>
             <md-app-content>
                 <md-field>
-                    <label>Message</label>
+                    
                     <md-textarea v-model="textarea" disabled v-auto-scroll-bottom></md-textarea>
                 </md-field>
                 <md-field>
-                    <label>Your Message</label>
+                    <label>여기에 메시지를 입력하세요</label>
                     <md-input v-model="message"></md-input>
-                    <md-button class="md-primary md-raised" @click="sendMessage()">Submit</md-button>
+                    <md-button class="md-primary md-raised" @click="sendMessage()">전송</md-button>
                 </md-field>
             </md-app-content>
         </md-app>
@@ -51,12 +51,15 @@ export default {
 </script>
 
 <style>
+.title {
+    text-align: center;
+}
 .md-app {
     height: 800px;
     border: 1px solid rgba(#000, .12);
 }
 
 .md-textarea {
-    height: 300px;
+    height: 600px;
 }
 </style>
